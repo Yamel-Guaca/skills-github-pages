@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+    <style>
+        html {
+            --s: 120px;
+            /* control the size */
+            --c1: #1658a3;
+            --c2: #515981;
+            --c3: #7a848b;
+            background: conic-gradient(from 150deg at 50% 33%, #0000, var(--c1) .5deg 60deg, #0000 60.5deg) calc(var(--s) / 2) calc(var(--s) / sqrt(2)), conic-gradient(from -30deg at 50% 66%, #0000, var(--c2) .5deg 60deg, var(--c3) 60.5deg);
+            background-size: var(--s) calc(.5 * var(--s) / tan(30deg));
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu container"><a href="#" class="logo">aseo</a><input type="checkbox" id="menu"><label for="menu"><img src="images/menu.png" class="menu-icono" alt=""></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="homepage.html">Inicio</a></li>
+                    <li><a href="empaques.html">Empaques</a></li>
+                    <li><a href="mascotas-index.html">Mascotas</a></li>
+                    <li><a href="mercado-index.html">Mercado</a></li>
+                    <li><a href="panaderia-index.html">Panaderia</a></li>
+                    <li><a href="papeleria-index.html">Papelería</a></li>
+                    <button id="logout">Cerrar Sesión</button>
+
+
+                </ul>
+            </nav>
+            <div class="container-icon">
+                <div class="container-cart-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" /></svg>
+                    <div class="count-products"><span id="contador-productos">0</span></div>
+                </div>
+                <div class="container-cart-products hidden-cart">
+                    <div class="row-product hidden">
+                        <div class="cart-product">
+                            <div class="info-cart-product"><span class="cantidad-producto-carrito">1</span>
+                                <p class="titulo-producto-carrito">Mini marker</p><span class="precio-producto-carrito">$80</span></div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg></div>
+                    </div>
+                    <div class="cart-total hidden">
+                        <h3>Total:</h3><span class="total-pagar">$200</span></div>                                      
+                        <p class="cart-empty">El carrito está vacío</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-items">
+        <div class="item">
+            <figure><img src="images/esponja lavaloza.PNG" alt="producto" /></figure>
+            <div class="info-product">
+                <h2>Esponja Matrix Suave 2und</h2>
+                <p class="price">$ 2000</p><button class="btn-add-cart">Añadir al carrito</button></div>
+        </div>
+        <div class="item">
+            <figure><img src="images/esponja matrix.PNG" alt="producto" /></figure>
+            <div class="info-product">
+                <h2>Esponja matrix und</h2>
+                <p class="price">$ 1000</p><button class="btn-add-cart">Añadir al carrito</button></div>
+        </div>
+        <div class="item">
+            <figure><img src="images/jabon ariel.PNG" alt="producto" /></figure>
+            <div class="info-product">
+                <h2>Jabon Ariel En Polvo 5000gr</h2>
+                <p class="price">$ 45000</p><button class="btn-add-cart">Añadir al carrito</button></div>
+        </div>
+        <div class="item">
+            <figure><img src="images/jabon barra cuerpo.PNG" alt="producto" /></figure>
+            <div class="info-product">
+                <h2>Jabon Barra Para El Cuerpo 3und Jonsons</h2>
+                <p class="price">$ 10000</p><button class="btn-add-cart">Añadir al carrito</button></div>
+        </div>
+        <div class="item">
+            <figure><img src="images/jabon barra.PNG" alt="producto" /></figure>
+            <div class="info-product">
+                <h2>Jabon Barra FAB Mulitiusos und</h2>
+                <p class="price">$ 2500</p><button class="btn-add-cart">Añadir al carrito</button></div>
+        </div>
+        <div class="item">
+            <figure><img src="images/jabon lavaloza.PNG" alt="producto" /></figure>
+            <div class="info-product">
+                <h2>Jabon Liquido Lavaloza Axion</h2>
+                <p class="price">$ 5000</p><button class="btn-add-cart">Añadir al carrito</button></div>
+        </div>
+        <div class="item">
+            <figure><img src="images/jabon liquido manos.PNG" alt="producto" /></figure>
+            <div class="info-product">
+                <h2>Jabon Liquido Para Manos Palmolive 500ml</h2>
+                <p class="price">$ 13000</p><button class="btn-add-cart">Añadir al carrito</button></div>
+        </div>
+        <div class="item">
+            <figure><img src="images/limpido.PNG" alt="producto" /></figure>
+            <div class="info-product">
+                <h2>Limpido Multiusos 3lt</h2>
+                <p class="price">$ 5000</p><button class="btn-add-cart">Añadir al carrito</button></div>
+        </div>
+    </div>
+    <footer class="footer container">
+        <div class="link">
+            <h3></h3>
+            <ul>
+                <ul>
+                    <li><a href="#">.</a></li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li><a href="#">Mantén una rutina de limpieza sostenible.</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="link">
+            <h3></h3>
+            <ul>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+            </ul>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Consejos de Aseo</h3>
+            <ul>
+                <li><a href="#">Los productos biodegradables son mejores para el medio ambiente.</a></li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3></h3>
+            <ul>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3></h3>
+            <ul>
+                <ul>
+                    <li><a href="#">.</a></li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li><a href="#">Adopta la regla de las tres R's: Reduzca el uso de quimicos utilizzando la cantidad adecuada, no desperdicie el producto</a></li>
+                </ul>
+        </div>
+    </footer>
+    <script src="./carrito-script.js/script.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+</body>
+
+</html>
